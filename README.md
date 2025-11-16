@@ -1,4 +1,4 @@
-# Site Modes x coreyhall93
+# coreyhall93 Site Modes
 
 A WordPress plugin that displays maintenance, coming soon, white page, or custom mode pages with WordPress-styled UI.
 
@@ -17,13 +17,13 @@ A WordPress plugin that displays maintenance, coming soon, white page, or custom
 ### Manual Installation
 
 1. Download or clone this repository
-2. Upload the `site-modes-x-coreyhall93` folder to `/wp-content/plugins/`
+2. Upload the `coreyhall93-site-modes` folder to `/wp-content/plugins/`
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Go to Settings > Site Modes to configure
 
 ### Alternative Method
 
-1. Zip the `site-modes-x-coreyhall93` folder
+1. Zip the `coreyhall93-site-modes` folder
 2. In WordPress admin, go to Plugins > Add New > Upload Plugin
 3. Upload the zip file and activate
 
@@ -75,9 +75,9 @@ Each mode comes with default messages you can customize:
 ## File Structure
 
 ```
-site-modes-x-coreyhall93/
-├── site-modes-x-coreyhall93.php    # Main plugin file
-└── README.md                        # This file
+coreyhall93-site-modes/
+├── coreyhall93-site-modes.php    # Main plugin file
+└── README.md                      # This file
 ```
 
 ## Changelog

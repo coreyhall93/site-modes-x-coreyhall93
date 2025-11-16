@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Site Modes x coreyhall93
- * Plugin URI: https://github.com/coreyhall93/site-modes-x-coreyhall93
+ * Plugin Name: coreyhall93 Site Modes
+ * Plugin URI: https://github.com/coreyhall93/coreyhall93-site-modes
  * Description: Display maintenance, coming soon, white page, or custom mode pages with WordPress-styled UI.
  * Version: 1.0.0
  * Requires at least: 5.0
@@ -10,7 +10,7 @@
  * Author URI: https://github.com/coreyhall93
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: site-modes-x-coreyhall93
+ * Text Domain: coreyhall93-site-modes
  */
 
 // Exit if accessed directly
