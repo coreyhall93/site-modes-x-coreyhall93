@@ -52,12 +52,36 @@ class CH93_Site_Modes {
     }
 
     public function register_settings() {
-        register_setting('ch93_site_modes', 'ch93_sm_active_mode');
-        register_setting('ch93_site_modes', 'ch93_sm_maintenance_message');
-        register_setting('ch93_site_modes', 'ch93_sm_coming_soon_message');
-        register_setting('ch93_site_modes', 'ch93_sm_white_page_message');
-        register_setting('ch93_site_modes', 'ch93_sm_custom_message');
-        register_setting('ch93_site_modes', 'ch93_sm_custom_title');
+        register_setting('ch93_site_modes', 'ch93_sm_active_mode', array(
+            'type' => 'string',
+            'sanitize_callback' => 'sanitize_text_field',
+            'default' => 'none',
+        ));
+        register_setting('ch93_site_modes', 'ch93_sm_maintenance_message', array(
+            'type' => 'string',
+            'sanitize_callback' => 'sanitize_textarea_field',
+            'default' => 'This site is currently undergoing scheduled maintenance. Please check back soon.',
+        ));
+        register_setting('ch93_site_modes', 'ch93_sm_coming_soon_message', array(
+            'type' => 'string',
+            'sanitize_callback' => 'sanitize_textarea_field',
+            'default' => 'Something awesome is coming soon. Stay tuned!',
+        ));
+        register_setting('ch93_site_modes', 'ch93_sm_white_page_message', array(
+            'type' => 'string',
+            'sanitize_callback' => 'sanitize_textarea_field',
+            'default' => 'This website is currently unavailable. If you are the owner of this site, please contact your website host.',
+        ));
+        register_setting('ch93_site_modes', 'ch93_sm_custom_message', array(
+            'type' => 'string',
+            'sanitize_callback' => 'wp_kses_post',
+            'default' => '',
+        ));
+        register_setting('ch93_site_modes', 'ch93_sm_custom_title', array(
+            'type' => 'string',
+            'sanitize_callback' => 'sanitize_text_field',
+            'default' => 'Site Unavailable',
+        ));
     }
 
     public function enqueue_admin_scripts($hook) {
@@ -83,7 +107,7 @@ class CH93_Site_Modes {
         <div class="wrap">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
 
-            <?php if (isset($_GET['settings-updated'])) : ?>
+            <?php if (isset($_GET['settings-updated']) && sanitize_text_field(wp_unslash($_GET['settings-updated']))) : // phpcs:ignore WordPress.Security.NonceVerification.Recommended ?>
                 <div class="notice notice-success is-dismissible">
                     <p>Settings saved successfully!</p>
                 </div>
