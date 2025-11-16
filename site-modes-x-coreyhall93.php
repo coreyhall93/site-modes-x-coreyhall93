@@ -1,14 +1,16 @@
 <?php
 /**
  * Plugin Name: Site Modes x CoreyHall93
- * Plugin URI: https://github.com/coreyhall93/site-modes
- * Description: Display maintenance, coming soon, white page, or custom modes with WordPress-styled pages
+ * Plugin URI: https://github.com/coreyhall93/site-modes-x-coreyhall93
+ * Description: Display maintenance, coming soon, white page, or custom mode pages with WordPress-styled UI.
  * Version: 1.0.0
+ * Requires at least: 5.0
+ * Requires PHP: 7.4
  * Author: CoreyHall93
  * Author URI: https://github.com/coreyhall93
- * License: GPL v2 or later
+ * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: ch93-site-modes
+ * Text Domain: site-modes-x-coreyhall93
  */
 
 // Exit if accessed directly
