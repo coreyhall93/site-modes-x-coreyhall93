@@ -1,4 +1,4 @@
-=== Site Modes x CoreyHall93 ===
+=== Site Modes x coreyhall93 ===
 Contributors: coreyhall93
 Donate link: https://coreyhall93.com/buy-me-a-coffee/
 Tags: maintenance mode, coming soon, under construction, white page, custom mode
@@ -13,7 +13,7 @@ Display maintenance, coming soon, white page, or custom mode pages with WordPres
 
 == Description ==
 
-Site Modes x CoreyHall93 allows you to quickly put your WordPress site into various modes that display a simple, WordPress-styled message page to all visitors. Perfect for maintenance windows, new site launches, or suspended accounts.
+Site Modes x coreyhall93 allows you to quickly put your WordPress site into various modes that display a simple, WordPress-styled message page to all visitors. Perfect for maintenance windows, new site launches, or suspended accounts.
 
 **Features:**
 

@@ -1,4 +1,4 @@
-# Site Modes x CoreyHall93
+# Site Modes x coreyhall93
 
 A WordPress plugin that displays maintenance, coming soon, white page, or custom mode pages with WordPress-styled UI.
 
