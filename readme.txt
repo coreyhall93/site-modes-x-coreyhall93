@@ -1,5 +1,6 @@
 === Site Modes x CoreyHall93 ===
 Contributors: coreyhall93
+Donate link: https://coreyhall93.com/buy-me-a-coffee/
 Tags: maintenance mode, coming soon, under construction, white page, custom mode
 Requires at least: 5.0
 Tested up to: 6.4
